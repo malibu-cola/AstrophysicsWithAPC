@@ -1,15 +1,19 @@
 [tool.poetry]
-name = "astrophysicswithapc"
+name = "astrophysics"
 version = "0.1.0"
 description = ""
 authors = ["malibu-cola <ryhrys4269@icloud.com>"]
 readme = "README.md"
+packages = [
+    { include = "astrophysics", from="src"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 notebook = "^7.3.2"
 pandas = "^2.2.3"
 matplotlib = "^3.10.0"
+ruff = "^0.9.7"
 
 
 [build-system]

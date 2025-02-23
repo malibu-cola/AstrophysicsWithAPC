@@ -1,4 +1,6 @@
-def simpsons_method(f: callable, lower_boundary: float, upper_boundary: float, num_of_division: int) -> float:
+def simpsons_method(
+    f: callable, lower_boundary: float, upper_boundary: float, num_of_division: int
+) -> float:
     """シンプソン法により積分を求める"""
     m = num_of_division // 2
     h = (upper_boundary - lower_boundary) / num_of_division
@@ -16,7 +18,7 @@ def simpsons_method(f: callable, lower_boundary: float, upper_boundary: float, n
         fup = f(xup)
 
         # compute and add contribution of these two subintervals
-        integral += h * (flow  + 4 * fmid + fup) / 3
+        integral += h * (flow + 4 * fmid + fup) / 3
 
         # prepare for next iteration
         xlow = xup
