@@ -14,6 +14,7 @@ notebook = "^7.3.2"
 pandas = "^2.2.3"
 matplotlib = "^3.10.0"
 ruff = "^0.9.7"
+sympy = "^1.13.3"
 
 
 [build-system]
